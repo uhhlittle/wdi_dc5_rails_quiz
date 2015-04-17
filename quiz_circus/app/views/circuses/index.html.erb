@@ -1,0 +1,4 @@
+<% @circuses.each do |circus| %>
+  <%= link_to circus.name, circus_path(circus.id) %>
+  <%= image_tag circus.image_url %>
+<% end %>
